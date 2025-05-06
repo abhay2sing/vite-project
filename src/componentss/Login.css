@@ -1,0 +1,97 @@
+.button1 {
+    width: 60%;
+   /* padding: 12px 20px;*/
+    margin: 8px 0;
+    border-radius: 20px;
+    box-sizing: border-box;
+    background-color: #e7e7e7; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  position:relative;
+  z-index: 1;
+  
+
+  /*transition: .4s, background-position 0s;*/
+  
+
+}
+.button1::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    background-color: black;
+    transition: transform 300ms ease-in-out;
+   /* transform: scaleX(0);*/
+   transform: scaleY(0);
+    /*transform-origin: left;*/
+    transform-origin: bottom;
+}
+.button1:hover::before {
+   /* background-color: black;*/
+    /*transform: scaleX(1);*/
+    transform: scaleY(1);
+    
+  }
+  .log {
+    width: 60vw;
+    height: 60vh;
+    background-color: antiquewhite;
+    margin-top: 10px;
+  }
+  .logi {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+  }
+  .log1 {
+    width: 60vw;
+    height: 60vh;
+    background-color: antiquewhite;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: fixed;
+    z-index: 2;
+    left: 80px;
+    top: 130px;
+    right: 20px;
+
+  }
+  input[type=email] {
+    
+    width: 60%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border-radius: 20px;
+    box-sizing: border-box;
+  }
+  input[type=password] {
+    width: 60%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border-radius: 20px;
+    box-sizing: border-box;
+  }
+  .close {
+    color: #aaa;
+    float: right;
+    margin-left: auto;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  .close:hover {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
